@@ -98,7 +98,7 @@ function bill() {
   } else if (Total < 50) {
     //checks if total is less than 50
     var shippingCharge = 10 + +Total;
-    tax1 = (Total * 13) / 100;
+    tax1 = (Total * 15) / 100;
     var Final = shippingCharge + +tax1;
     document.getElementById("Billing").innerHTML =
       "Sorry! You are not eligible for free shipping,Your Total bill is " +
@@ -136,7 +136,7 @@ function checkOut() {
   }
   document.getElementById("name").innerHTML =
     "Hello " + Name + " here is your reciept";
-    
+
   if (qnta > 0) {
     document.getElementById("item1").innerHTML =
       "You have baught " + qnta + " Pink T-shirt worth " + totala + " $";
@@ -163,5 +163,3 @@ function checkOut() {
     document.getElementById("tax").innerHTML = "Your taxt is " + tax2;
   }
 }
-
-
